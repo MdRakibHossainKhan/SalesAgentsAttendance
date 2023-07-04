@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_mid"
+    android:layout_marginTop="@dimen/margin_min"
+    android:layout_marginEnd="@dimen/margin_mid"
+    android:layout_marginBottom="@dimen/margin_min"
+    app:cardCornerRadius="@dimen/radius_max">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_min">
+
+        <TextView
+            android:id="@+id/storeNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/store_name"
+            android:textSize="@dimen/sub_title_text" />
+
+        <TextView
+            android:id="@+id/storeAddressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/store_address"
+            android:textSize="@dimen/text" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
