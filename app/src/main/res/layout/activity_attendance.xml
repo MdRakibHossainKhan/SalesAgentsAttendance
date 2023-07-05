@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lavender"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".AttendanceActivity">
@@ -21,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_max"
         android:layout_marginEnd="@dimen/margin_max"
-        android:text="@string/submit_todays_attendance"
+        android:text="@string/submit_attendance_message"
         android:textSize="@dimen/text" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -37,6 +38,7 @@
             android:id="@+id/nameTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:textSize="@dimen/sub_title_text" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -54,6 +56,7 @@
             android:id="@+id/userIdTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:textSize="@dimen/sub_title_text" />
 
     </com.google.android.material.textfield.TextInputLayout>

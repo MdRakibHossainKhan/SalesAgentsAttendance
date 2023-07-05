@@ -1,5 +1,6 @@
-package com.rakib.sales_agents_attendance
+package com.rakib.sales_agents_attendance.utilities
 
+import com.rakib.sales_agents_attendance.BuildConfig
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

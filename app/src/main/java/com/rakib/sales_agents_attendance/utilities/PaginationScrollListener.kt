@@ -1,4 +1,4 @@
-package com.rakib.sales_agents_attendance
+package com.rakib.sales_agents_attendance.utilities
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView

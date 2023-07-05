@@ -4,18 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lavender"
     tools:context=".StoreListActivity">
 
     <TextView
         android:id="@+id/headingTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_max"
         android:layout_marginTop="@dimen/margin_max"
+        android:layout_marginEnd="@dimen/margin_max"
         android:text="@string/store_list"
         android:textSize="@dimen/title_text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subHeadingTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_max"
+        android:layout_marginEnd="@dimen/margin_max"
+        android:text="@string/select_store_message"
+        android:textSize="@dimen/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingTextView" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/storeListRecyclerView"
@@ -28,7 +43,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headingTextView"
+        app:layout_constraintTop_toBottomOf="@+id/subHeadingTextView"
         tools:listitem="@layout/store_list_item" />
 
     <ProgressBar

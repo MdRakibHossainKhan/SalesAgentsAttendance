@@ -10,13 +10,15 @@ import com.rakib.sales_agents_attendance.adapters.StoreListAdapter
 import com.rakib.sales_agents_attendance.interfaces.AttendanceManager
 import com.rakib.sales_agents_attendance.models.StoreApiResponse
 import com.rakib.sales_agents_attendance.models.StoreData
+import com.rakib.sales_agents_attendance.utilities.PaginationScrollListener
+import com.rakib.sales_agents_attendance.utilities.RetrofitHelper
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class StoreListActivity : AppCompatActivity() {
     private var currentPage = 1
-    private var totalPage = 0
+    private var totalPage = 1
     private var isLastPage = false
     private var isLoading = false
     var storeListData = ArrayList<StoreData>()
